@@ -1,0 +1,1447 @@
+<!doctype html>
+<html class="no-js " lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 5 admin template and web Application ui kit.">
+    <meta name="keyword" content="ALUI, Bootstrap 5, ReactJs, Angular, Laravel, VueJs, ASP .Net, Admin Dashboard, Admin Theme">
+    <title>:: ALUI ::</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../../../assets/css/al.style.min.css">
+    <!-- project layout css file -->
+    <link rel="stylesheet" href="../../../assets/css/layout.d.sub.header.min.css">
+    <!-- Prism css file please do not add in your project -->
+    <link rel="stylesheet" href="../../../assets/plugin/prismjs/prism.css">
+</head>
+
+<body>
+
+<div id="layout-d-sub-header" class="theme-blue">
+
+    <!-- Navigation -->
+    <div class="header fixed-top shadow-sm">
+        <nav class="navbar navbar-light bg-secondary py-2 py-md-3 px-lg-5 px-md-2">
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a href="index.html" class="me-3 me-lg-4 brand-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 64 80" fill="none">
+                        <path d="M58.8996 22.7L26.9996 2.2C23.4996 -0.0999999 18.9996 0 15.5996 2.5C12.1996 5 10.6996 9.2 11.7996 13.3L15.7996 26.8L3.49962 39.9C-3.30038 47.7 3.79962 54.5 3.89962 54.6L3.99962 54.7L36.3996 78.5C36.4996 78.6 36.5996 78.6 36.6996 78.7C37.8996 79.2 39.1996 79.4 40.3996 79.4C42.9996 79.4 45.4996 78.4 47.4996 76.4C50.2996 73.5 51.1996 69.4 49.6996 65.6L45.1996 51.8L58.9996 39.4C61.7996 37.5 63.3996 34.4 63.3996 31.1C63.4996 27.7 61.7996 24.5 58.8996 22.7ZM46.7996 66.7V66.8C48.0996 69.9 46.8996 72.7 45.2996 74.3C43.7996 75.9 41.0996 77.1 37.9996 76L5.89961 52.3C5.29961 51.7 1.09962 47.3 5.79962 42L16.8996 30.1L23.4996 52.1C24.3996 55.2 26.5996 57.7 29.5996 58.8C30.7996 59.2 31.9996 59.5 33.1996 59.5C35.0996 59.5 36.9996 58.9 38.6996 57.8C38.7996 57.8 38.7996 57.7 38.8996 57.7L42.7996 54.2L46.7996 66.7ZM57.2996 36.9C57.1996 36.9 57.1996 37 57.0996 37L44.0996 48.7L36.4996 25.5V25.4C35.1996 22.2 32.3996 20 28.9996 19.3C25.5996 18.7 22.1996 19.8 19.8996 22.3L18.2996 24L14.7996 12.3C13.8996 8.9 15.4996 6.2 17.3996 4.8C18.4996 4 19.8996 3.4 21.4996 3.4C22.6996 3.4 23.9996 3.7 25.2996 4.6L57.1996 25.1C59.1996 26.4 60.2996 28.6 60.2996 30.9C60.3996 33.4 59.2996 35.6 57.2996 36.9Z" fill="black"/>
+                    </svg>
+                </a>
+
+                <!-- Search -->
+                <div class="h-left d-none d-sm-block">
+                    <div class="input-group border rounded">
+                        <button class="btn btn-outline-secondary dropdown-toggle border-0 d-none d-sm-block" type="button" data-bs-toggle="dropdown" aria-expanded="false">Fillter</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                        <input type="text" class="form-control bg-transparent border-0" placeholder="Search here...">
+                    </div>
+                </div>
+
+                <!-- header rightbar icon -->
+                <div class="h-right flex-grow-1 justify-content-end d-flex align-items-center me-5 me-lg-0">
+                    <div class="d-flex">
+                        <a class="nav-link text-primary" href="#" title="Settings" data-bs-toggle="modal" data-bs-target="#SettingsModal"><i class="fa fa-gear"></i></a>
+                        <a class="nav-link text-primary" href="#" data-bs-toggle="modal" data-bs-target="#LayoutModal">
+                            <i class="fa fa-sliders"></i>
+                        </a>
+                    </div>
+                    <div class="dropdown notifications">
+                        <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell"></i>
+                            <span class="pulse-ring"></span>
+                        </a>
+                        <div id="NotificationsDiv" class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
+                            <div class="card border-0 w380">
+                                <div class="card-header border-0 p-3">
+                                    <h5 class="mb-0 fw-light d-flex justify-content-between">
+                                        <span>Notifications Center</span>
+                                        <span class="badge text-muted">14</span>
+                                    </h5>
+                                    <ul class="nav nav-tabs mt-3 border-bottom-0" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link fw-light ps-0 me-2 active" data-bs-toggle="tab" href="#Noti-tab-Message" role="tab">Message</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link fw-light me-2" data-bs-toggle="tab" href="#Noti-tab-Events" role="tab">Events</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link fw-light" data-bs-toggle="tab" href="#Noti-tab-Logs" role="tab">Logs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content card-body custom_scroll">
+                                    <div class="tab-pane fade show active" id="Noti-tab-Message" role="tabpanel">
+                                        <ul class="list-unstyled list mb-0">
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar1.jpg" alt="">
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="d-flex justify-content-between mb-0 text-muted"><span class="fw-bold">Chris Morise</span> <small>2MIN</small></p>
+                                                        <span class="text-muted">changed an issue from "In Progress" to <span class="badge bg-success">Review</span></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <div class="avatar rounded-circle no-thumbnail">RH</div>
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="d-flex justify-content-between mb-0 text-muted"><span class="fw-bold">Hammer</span> <small>13MIN</small></p>
+                                                        <span class="text-muted">It is a long established fact that a reader will be distracted</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar3.jpg" alt="">
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="d-flex justify-content-between mb-0 text-muted"><span class="fw-bold">Orlando Lentz</span> <small>1HR</small></p>
+                                                        <span class="text-muted">There are many variations of passages</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar4.jpg" alt="">
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="d-flex justify-content-between mb-0 text-muted"><span class="fw-bold">Kelly</span> <small>1DAY</small></p>
+                                                        <span class="text-muted">Contrary to popular belief <span class="badge bg-danger">Code</span></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar5.jpg" alt="">
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="d-flex justify-content-between mb-0 text-muted"><span class="fw-bold">Hammer</span> <small>13MIN</small></p>
+                                                        <span class="text-muted">making it over 2000 years old</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar6.jpg" alt="">
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="d-flex justify-content-between mb-0 text-muted"><span class="fw-bold">Orlando Lentz</span> <small>1HR</small></p>
+                                                        <span class="text-muted">There are many variations of passages</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar7.jpg" alt="">
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="d-flex justify-content-between mb-0 text-muted"><span class="fw-bold">savera</span> <small>1DAY</small></p>
+                                                        <span class="text-muted">The generated Lorem Ipsum</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="Noti-tab-Events" role="tabpanel">
+                                        <ul class="list-unstyled list mb-0">
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <div class="avatar rounded no-thumbnail"><i class="fa fa-info-circle fa-lg"></i></div>
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="mb-0 text-muted">Campaign <strong class="text-primary">Holiday Sale</strong> is nearly reach budget limit.</p>
+                                                        <small class="text-muted">10:00 AM Today</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <div class="avatar rounded no-thumbnail"><i class="fa fa-thumbs-up fa-lg"></i></div>
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="mb-0 text-muted">Your New Campaign <strong class="text-primary">Holiday Sale</strong> is approved.</p>
+                                                        <small class="text-muted">11:30 AM Today</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <div class="avatar rounded no-thumbnail"><i class="fa fa-pie-chart fa-lg"></i></div>
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="mb-0 text-muted">Website visits from Twitter is <strong class="text-danger">27% higher</strong> than last week.</p>
+                                                        <small class="text-muted">04:00 PM Today</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <div class="avatar rounded no-thumbnail"><i class="fa fa-warning fa-lg"></i></div>
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="mb-0 text-muted"><strong class="text-warning">Error</strong> on website analytics configurations</p>
+                                                        <small class="text-muted">Yesterday</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="py-2 mb-1 border-bottom">
+                                                <a href="javascript:void(0);" class="d-flex">
+                                                    <div class="avatar rounded no-thumbnail"><i class="fa fa-thumbs-up fa-lg"></i></div>
+                                                    <div class="flex-fill ms-3">
+                                                        <p class="mb-0 text-muted">Your New Campaign <strong class="text-primary">Holiday Sale</strong> is approved.</p>
+                                                        <small class="text-muted">11:30 AM Today</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="Noti-tab-Logs" role="tabpanel">
+                                        <h4>No Logs right now!</h4>
+                                    </div>
+                                </div>
+                                <a class="card-footer text-center border-top-0" href="#"> View all notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown Language d-none d-sm-block">
+                        <a class="nav-link text-primary dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fa fa-language"></i>
+                        </a>
+                        <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0" data-bs-popper="none">
+                            <div class="card border-0">
+                                <div class="list-group list-group-custom" style="width: 200px;">
+                                    <a href="#" class="list-group-item">
+                                        <span class="flag-icon flag-icon-gb me-2"></span>UK English
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="flag-icon flag-icon-us me-2"></span>US English
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="flag-icon flag-icon-de me-2"></span>Germany
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="flag-icon flag-icon-in me-2"></span>Hindi
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="flag-icon flag-icon-sa me-2"></span>Saudi Arabia
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown user-profile ms-2 ms-sm-3">
+                        <a class="nav-link dropdown-toggle pulse p-0" href="#" role="button" data-bs-toggle="dropdown">
+                            <img class="avatar rounded-circle img-thumbnail" src="../../../assets/images/profile_av.png" alt="">
+                        </a>
+                        <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
+                            <div class="card border-0 w240">
+                                <div class="card-body border-bottom">
+                                    <div class="d-flex py-1">
+                                        <img class="avatar rounded-circle" src="../../../assets/images/profile_av.png" alt="">
+                                        <div class="flex-fill ms-3">
+                                            <p class="mb-0 text-muted"><span class="fw-bold">Chris Morise</span></p>
+                                            <small class="text-muted">chris.fox@gamil.com</small>
+                                            <div>
+                                                <a href="#" class="card-link">Sign out</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group m-2">
+                                    <a href="#" class="list-group-item list-group-item-action border-0"><i class="w30 fa fa-user"></i>Profile & account</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0"><i class="w30 fa fa-gear"></i>Settings</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0"><i class="w30 fa fa-tag"></i>Customization</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0"><i class="w30 fa fa-users"></i>Manage team</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0"><i class="w30 fa fa-calendar"></i>My Events</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0"><i class="w30 fa fa-credit-card"></i>My Statements</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Sub header: menu -->
+        <div class="sub-header">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+
+                    <!-- menu toggler -->
+                    <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader">
+                        <span class="fa fa-bars"></span>
+                    </button>
+
+                    <!-- main menu -->
+                    <div class="collapse navbar-collapse order-0 py-1 py-md-2 px-lg-5 px-md-4" id="mainHeader">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><i class="fa fa-dashboard me-2"></i><span>Dashboard</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-slack me-2"></i><span>Apps</span>
+                                </a>
+                                <ul class="dropdown-menu rounded-lg shadow border-0 dropdown-animation">
+                                    <li><a class="dropdown-item" href="calendar.html">Calendar</a></li>
+                                    <li><a class="dropdown-item" href="chat.html">Chat app</a></li>
+                                    <li><a class="dropdown-item" href="#">Inbox</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-file me-2"></i><span>Pages</span>
+                                </a>
+                                <ul class="dropdown-menu rounded-lg shadow border-0 dropdown-animation">
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="timeline.html">Timeline</a></li>
+                                    <li><a class="dropdown-item" href="imagegallery.html">Image Gallery</a></li>
+                                    <li><a class="dropdown-item" href="invoices.html">Invoices</a></li>
+                                    <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                                    <li><a class="dropdown-item" href="teamsboard.html">Teams Board</a></li>
+                                    <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="../../../documentation/w-cards.html">Widget's</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-lock me-2"></i><span>Authentication</span>
+                                </a>
+                                <ul class="dropdown-menu rounded-lg shadow border-0 dropdown-animation">
+                                    <li><a class="dropdown-item" href="auth-signin.html">Sign in</a></li>
+                                    <li><a class="dropdown-item" href="auth-signup.html">Sign up</a></li>
+                                    <li><a class="dropdown-item" href="auth-password-reset.html">Password reset</a></li>
+                                    <li><a class="dropdown-item" href="auth-two-step.html">2-Step Authentication</a></li>
+                                    <li><a class="dropdown-item" href="auth-404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-diamond me-2"></i><span>UI Components</span>
+                                </a>
+                                <ul class="dropdown-menu rounded-lg shadow border-0 dropdown-animation">
+                                    <li><a class="dropdown-item" href="ui-alerts.html">Alerts</a></li>
+                                    <li><a class="dropdown-item" href="ui-badge.html">Badge</a></li>
+                                    <li><a class="dropdown-item" href="ui-breadcrumb.html">Breadcrumb</a></li>
+                                    <li><a class="dropdown-item" href="ui-buttons.html">Buttons</a></li>
+                                    <li><a class="dropdown-item" href="ui-card.html">Card</a></li>
+                                    <li><a class="dropdown-item" href="ui-carousel.html">Carousel</a></li>
+                                    <li><a class="dropdown-item" href="ui-collapse.html">Collapse</a></li>
+                                    <li><a class="dropdown-item active" href="ui-dropdowns.html">Dropdowns</a></li>
+                                    <li><a class="dropdown-item" href="ui-listgroup.html">List group</a></li>
+                                    <li><a class="dropdown-item" href="ui-modal.html">Modal</a></li>
+                                    <li><a class="dropdown-item" href="ui-navs.html">Navs</a></li>
+                                    <li><a class="dropdown-item" href="ui-navbar.html">Navbar</a></li>
+                                    <li><a class="dropdown-item" href="ui-pagination.html">Pagination</a></li>
+                                    <li><a class="dropdown-item" href="ui-popovers.html">Popovers</a></li>
+                                    <li><a class="dropdown-item" href="ui-progress.html">Progress</a></li>
+                                    <li><a class="dropdown-item" href="ui-scrollspy.html">Scrollspy</a></li>
+                                    <li><a class="dropdown-item" href="ui-spinners.html">Spinners</a></li>
+                                    <li><a class="dropdown-item" href="ui-toasts.html">Toasts</a></li>
+                                    <li><a class="dropdown-item" href="ui-tooltips.html">Tooltips</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-file-text me-2"></i><span>Docs</span>
+                                </a>
+                                <ul class="dropdown-menu rounded-lg shadow border-0 dropdown-animation">
+                                    <li><a class="dropdown-item" href="../../../documentation/stater-page.html">Stater page</a></li>
+                                    <li><a class="dropdown-item" href="../../../documentation/index.html">Documentation</a></li>
+                                    <li><a class="dropdown-item" href="../../../documentation/changelog.html">Changelog</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- main body area -->
+    <div class="main px-lg-5 px-md-2">
+
+        <!-- Body: Header -->
+        <div class="body-header border-bottom d-flex py-lg-3 py-md-2">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <ol class="breadcrumb d-inline-flex bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item">Components</li>
+                            <li class="breadcrumb-item active">Dropdowns</li>
+                        </ol>
+                        <h1 class="h4 mt-1">Dropdowns</h1>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://v5.getbootstrap.com/" class="btn btn-dark lift">GetBootstrap</a>
+                    </div>
+                </div>  <!-- Row end  -->
+            </div>
+        </div>
+
+        <!-- Body: Body -->
+        <div class="body d-flex py-lg-4 py-3">
+            <div class="container-fluid">
+                <div class="col-12">
+                    <div class="bd-content">
+                        
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Dropdowns</strong> for more bootstrao components <a href="https://getbootstrap.com/docs/4.5/components/dropdowns/" target="_blank">Bootstrap Dropdowns documentation <i class="fa fa-external-link"></i></a>
+                        </div>
+
+
+                        <h2 id="overview">Overview</h2>
+                        <p>Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is <a href="https://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/">an intentional design decision</a>.</p>
+                        <p>Dropdowns are built on a third party library, <a href="https://popper.js.org/">Popper.js</a>, which provides dynamic positioning and viewport detection. Be sure to include <a href="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">popper.min.js</a> before Bootstrap’s JavaScript or use <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code> which contains Popper.js. Popper.js isn’t used to position dropdowns in navbars though as dynamic positioning isn’t required.</p>
+
+                        <div class="border-top mt-5 pt-3">
+                            <h3 id="single-button">Single button</h3>
+                            <p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either <code>&lt;button&gt;</code> elements:</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview1" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML1" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="nav-Preview1" role="tabpanel">
+                                            <!-- dropdown: primary -->
+                                            <div class="dropdown d-inline-flex m-1">
+                                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Primary Dropdown
+                                                </button>
+                                                <ul class="dropdown-menu border-0 shadow p-3">
+                                                    <li><a class="dropdown-item py-2 rounded" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item py-2 rounded" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item py-2 rounded" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- dropdown: outline primary -->
+                                            <div class="dropdown d-inline-flex m-1">
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Primary Outline Dropdown
+                                                </button>
+                                                <ul class="dropdown-menu border-0 shadow p-3">
+                                                    <li><a class="dropdown-item py-2 rounded" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item py-2 rounded" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item py-2 rounded" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- dropdown: dark -->
+                                            <div class="dropdown d-inline-flex m-1">
+                                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Dark Dropdown
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-dark shadow p-3">
+                                                    <li><a class="dropdown-item py-2 rounded active" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item py-2 rounded" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item py-2 rounded" href="#">Something else here</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item py-2 rounded" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-HTML1" role="tabpanel">
+<pre class="language-html" data-lang="html">
+<code>&lt;!-- dropdown: primary --&gt;
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;button class=&quot;btn btn-primary dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenuButton&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Primary Dropdown
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu border-0 shadow p-3&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- dropdown: outline primary --&gt;
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;button class=&quot;btn btn-outline-primary dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenuButton&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Primary Outline Dropdown
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu border-0 shadow p-3&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- dropdown: dark --&gt;
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;button class=&quot;btn btn-dark dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenuButton2&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Dark Dropdown
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu dropdown-menu-dark shadow p-3&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded active&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code>
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>And with <code>&lt;a&gt;</code> elements:</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview2" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML2" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body tab-content">
+                                    <div class="tab-pane fade show active" id="nav-Preview2" role="tabpanel">
+                                        <!-- dropdown: primary -->
+                                        <div class="dropdown d-inline-flex m-1">
+                                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Primary Dropdown
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- dropdown: outline primary -->
+                                        <div class="dropdown d-inline-flex m-1">
+                                            <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Primary Outline Dropdown
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- dropdown: dark -->
+                                        <div class="dropdown d-inline-flex m-1">
+                                            <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dark Dropdown
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                                <li><a class="dropdown-item active" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-HTML2" role="tabpanel">
+<pre class="language-html" data-lang="html">
+<code>&lt;!-- dropdown: primary --&gt;
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;a class=&quot;btn btn-primary dropdown-toggle&quot; href=&quot;#&quot; role=&quot;button&quot; id=&quot;dropdownMenuLink&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Primary Dropdown
+    &lt;/a&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenuButton&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- dropdown: outline primary --&gt;
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;a class=&quot;btn btn-outline-primary dropdown-toggle&quot; href=&quot;#&quot; role=&quot;button&quot; id=&quot;dropdownMenuLink&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Primary Outline Dropdown
+    &lt;/a&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenuButton&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- dropdown: dark --&gt;
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;a class=&quot;btn btn-dark dropdown-toggle&quot; href=&quot;#&quot; role=&quot;button&quot; id=&quot;dropdownMenuLink&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Dark Dropdown
+    &lt;/a&gt;
+    &lt;ul class=&quot;dropdown-menu dropdown-menu-dark&quot; aria-labelledby=&quot;dropdownMenuButton2&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item active&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code>
+</pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>The best part is you can do this with any button variant, too:</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview3" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML3" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body tab-content">
+                                    <div class="tab-pane fade show active" id="nav-Preview3" role="tabpanel">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Primary</button>
+                                            <ul class="dropdown-menu border-0 shadow bg-primary">
+                                                <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item text-light" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Secondary</button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Success</button>
+                                            <ul class="dropdown-menu border-0 shadow bg-success">
+                                                <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item text-light" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Info</button>
+                                            <ul class="dropdown-menu border-0 shadow bg-info">
+                                                <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item text-light" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Warning</button>
+                                            <ul class="dropdown-menu border-0 shadow bg-warning">
+                                                <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item text-light" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Danger</button>
+                                            <ul class="dropdown-menu border-0 shadow bg-danger">
+                                                <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item text-light" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-HTML3" role="tabpanel">
+<pre class="language-html" data-lang="html">
+<code>&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Primary&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu border-0 shadow bg-primary&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Secondary&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-success dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Success&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu border-0 shadow bg-success&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-info dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Info&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu border-0 shadow bg-info&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Warning&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu border-0 shadow bg-warning&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Danger&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu border-0 shadow bg-danger&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item text-light&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;</code>
+</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top mt-5 pt-3">
+                            <h3 id="split-button">Split button</h3>
+                            <p>Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of <code>.dropdown-toggle-split</code> for proper spacing around the dropdown caret.</p>
+                            <p>We use this extra class to reduce the horizontal <code>padding</code> on either side of the caret by 25% and remove the <code>margin-left</code> that’s added for regular button dropdowns. Those extra changes keep the caret centered in the split button and provide a more appropriately sized hit area next to the main button.</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview4" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML4" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body tab-content">
+                                    <div class="tab-pane fade show active" id="nav-Preview4" role="tabpanel">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="visually-hidden">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu border-0 shadow py-3 px-2">
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-secondary">Secondary</button>
+                                            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="visually-hidden">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu border-0 shadow py-3 px-2">
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success">Success</button>
+                                            <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="visually-hidden">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu border-0 shadow py-3 px-2">
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info">Info</button>
+                                            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="visually-hidden">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu border-0 shadow py-3 px-2">
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="visually-hidden">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu border-0 shadow py-3 px-2">
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger">Danger</button>
+                                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="visually-hidden">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu border-0 shadow py-3 px-2">
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item py-2 rounded" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-HTML4" role="tabpanel">
+<pre class="language-html" data-lang="html">
+<code>&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle dropdown-toggle-split&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu border-0 shadow py-3 px-2&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item py-2 rounded&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;</code>
+</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top mt-5 pt-3">
+                            <h3 id="split-button">Sizing</h3>
+                            <p>Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview5" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML5" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body tab-content">
+                                    <div class="tab-pane fade show active" id="nav-Preview5" role="tabpanel">
+                                        <div class="btn-toolbar" role="toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Large button
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div><!-- /btn-group -->
+                                            <div class="btn-group ms-2">
+                                                <button type="button" class="btn btn-lg btn-secondary">Large split button</button>
+                                                <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div><!-- /btn-group -->
+                                        </div><!-- /btn-toolbar -->
+                                        <div class="btn-toolbar py-2" role="toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Small button
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div><!-- /btn-group -->
+                                            <div class="btn-group ms-2">
+                                                <button type="button" class="btn btn-sm btn-secondary">Small split button</button>
+                                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div><!-- /btn-group -->
+                                        </div><!-- /btn-toolbar -->
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-HTML5" role="tabpanel">
+<pre class="language-html" data-lang="html">
+<code>&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button class=&quot;btn btn-secondary btn-lg dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Large button
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;div class=&quot;btn-group ms-2&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-secondary&quot;&gt;Large split button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button class=&quot;btn btn-secondary btn-sm dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Small button
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;div class=&quot;btn-group ms-2&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot;&gt;Small split button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;</code>
+</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top mt-5 pt-3">
+                            <h3 id="text">Text</h3>
+                            <p>Place any freeform text within a dropdown menu with text and use <a href="https://v5.getbootstrap.com/docs/5.0/utilities/spacing/">spacing utilities</a>. Note that you’ll likely need additional sizing styles to constrain the menu width.</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview6" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML6" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body tab-content">
+                                    <div class="tab-pane fade show active" id="nav-Preview6" role="tabpanel">
+                                        <!-- text dropdown-menu-->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Text Dropdown with div
+                                            </button>
+                                            <div class="dropdown-menu p-4 text-muted border-0 shadow" style="max-width: 200px;">
+                                                <p>Some example text that's free-flowing within the dropdown menu.</p>
+                                                <p class="mb-0">And this is more example text.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-HTML6" role="tabpanel">
+<pre class="language-html" data-lang="html">
+<code>&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenuButton&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Dropdown button
+    &lt;/button&gt;
+    &lt;div class=&quot;dropdown-menu p-4 text-muted border-0 shadow&quot; style=&quot;max-width: 200px;&quot;&gt;
+        &lt;p&gt;Some example text that's free-flowing within the dropdown menu.&lt;/p&gt;
+        &lt;p class=&quot;mb-0&quot;&gt;And this is more example text.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top mt-5 pt-3">
+                            <h3 id="forms">Forms</h3>
+                            <p>Put a form within a dropdown menu, or make it into a dropdown menu, and use <a href="https://v5.getbootstrap.com/docs/5.0/utilities/spacing/">margin or padding utilities</a> to give it the negative space you require.</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview7" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML7" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body tab-content">
+                                    <div class="tab-pane fade show active" id="nav-Preview7" role="tabpanel">
+                                        <!-- dropdown-menu-->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Login Forms Dropdown
+                                            </button>
+                                            <div class="dropdown-menu p-3 text-muted border-0 shadow" style="width: 320px;">
+                                                <form class="px-2 py-2">
+                                                    <div class="mb-3">
+                                                        <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                            <label class="form-check-label" for="dropdownCheck">Remember me</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                                </form>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                                <a class="dropdown-item" href="#">Forgot password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-HTML7" role="tabpanel">
+<pre class="language-html" data-lang="html">
+<code>&lt;!-- dropdown-menu--&gt;
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenuButton&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+        Login Forms Dropdown
+    &lt;/button&gt;
+    &lt;div class=&quot;dropdown-menu p-3 text-muted border-0 shadow&quot; style=&quot;width: 320px;&quot;&gt;
+        &lt;form class=&quot;px-2 py-2&quot;&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;exampleDropdownFormEmail1&quot; class=&quot;form-label&quot;&gt;Email address&lt;/label&gt;
+                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleDropdownFormEmail1&quot; placeholder=&quot;email@example.com&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;exampleDropdownFormPassword1&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
+                &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleDropdownFormPassword1&quot; placeholder=&quot;Password&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;div class=&quot;form-check&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;dropdownCheck&quot;&gt;
+                    &lt;label class=&quot;form-check-label&quot; for=&quot;dropdownCheck&quot;&gt;Remember me&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign in&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;New around here? Sign up&lt;/a&gt;
+        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Forgot password?&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body: Footer -->
+        <div class="body-footer">
+            <div class="container-fluid">
+                <div class="col-12">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col">
+                                    <p class="mb-0">© AL-UI. <span class="d-none d-sm-inline-block">2021 ThemeMakker.</span></p>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="d-flex justify-content-end">
+                                        <!-- List Dot -->
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <a class="list-separator-link" href="https://www.thememakker.com/about/">About</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="list-separator-link" href="https://www.thememakker.com/hire-us/">Hire us</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="list-separator-link" href="https://www.thememakker.com/all-templates/">Template</a>
+                                            </li>
+                                
+                                            <li class="list-inline-item">
+                                                <a class="list-separator-link" href="https://themeforest.net/licenses/standard" target="_blank">License</a>
+                                            </li>
+                                        </ul>
+                                        <!-- End List Dot -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal: Layout -->
+    <div class="modal fade" id="LayoutModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-vertical modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ready to build Layouts</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body custom_scroll">
+                    <div class="mb-4">Customize your overview page layout. Choose the one that best fits your needs.</div>
+                    <h5 class="mt-5 pb-2">Left sidebar with icon</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-default.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Default</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../index-mini-sidebar.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-mini-sidebar.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Default + Menu Collapse</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-c/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-c.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Menu + Tab view</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-g/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-g.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Icon menu with Grid view</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-i/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-i.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Dual tone icon + menu list</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="mt-5 pb-2">Header top menu</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-d/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-d.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Header <span class="text-muted small">(Fluid)</span></h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-d-container/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-d-container.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Header <span class="text-muted small">(Container)</span></h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift border border-primary bg-primary text-light" href="index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-d-sub-header.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Header + Sub menu <span class="text-muted small">(Fluid)</span></h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-d-sub-header-container/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-d-sub-header-container.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Header + Submenu <span class="text-muted small">(Container)</span></h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-f/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-f.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Header + Submenu, Overlay <span class="text-muted small">(Fluid)</span></h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-f-container/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-f-container.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Header + Submenu, Overlay <span class="text-muted small">(Container)</span></h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-l/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-l.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Megamenu + Animation Overlay</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-q/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-q.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Header + Megamenu sticky</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="mt-5 pb-2">Content Combinations</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-b/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-b.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Default</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-e/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-e.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Default</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-h/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-h.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Default</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-k/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-k.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Default</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-p/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-p.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Background BG</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="card lift" href="../layout-n/index.html">
+                                <img class="card-img-top" src="../../../assets/images/layout/layout-n.svg" alt="" />
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Sidebar with BG</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Setting -->
+    <div class="modal fade" id="SettingsModal" tabindex="-1">
+        <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title">AL-UI Setting</h5>
+                    </div>
+                    <div class="modal-body custom_scroll">
+                    <!-- Settings: Font -->
+                    <div class="setting-font">
+                        <small class="card-title text-muted">Google font Settings</small>
+                        <ul class="list-group font_setting mb-3 mt-1">
+                            <li class="list-group-item py-1 px-2">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="radio" name="font" id="font-opensans" value="font-opensans" checked="">
+                                    <label class="form-check-label" for="font-opensans">
+                                        Open Sans Google Font
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-1 px-2">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="radio" name="font" id="font-quicksand" value="font-quicksand">
+                                    <label class="form-check-label" for="font-quicksand">
+                                        Quicksand Google Font
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-1 px-2">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="radio" name="font" id="font-nunito" value="font-nunito">
+                                    <label class="form-check-label" for="font-nunito">
+                                        Nunito Google Font
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-1 px-2">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="radio" name="font" id="font-Raleway" value="font-raleway">
+                                    <label class="form-check-label" for="font-Raleway">
+                                        Raleway Google Font
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Settings: Color -->
+                    <div class="setting-theme">
+                        <small class="card-title text-muted">Theme Color Settings</small>
+                        <ul class="list-unstyled d-flex justify-content-between choose-skin mb-2 mt-1">
+                            <li data-theme="indigo"><div class="indigo"></div></li>
+                            <li data-theme="blue" class="active"><div class="blue"></div></li>
+                            <li data-theme="cyan"><div class="cyan"></div></li>
+                            <li data-theme="green"><div class="green"></div></li>
+                            <li data-theme="orange"><div class="orange"></div></li>
+                            <li data-theme="blush"><div class="blush"></div></li>
+                            <li data-theme="red"><div class="red"></div></li>
+                            <li data-theme="dynamic"><div class="dynamic"><i class="fa fa-paint-brush"></i></div></li>
+                        </ul>
+                        <div class="form-check form-switch gradient-switch mb-1">
+                                <input class="form-check-input" type="checkbox" id="CheckGradient">
+                                <label class="form-check-label" for="CheckGradient">Enable Gradient! ( Sidebar )</label>
+                            </div>
+                    </div>
+                    <!-- Settings: bg image -->
+                    <div class="setting-img mb-3">
+                        <div class="form-check form-switch imagebg-switch mb-1">
+                            <input class="form-check-input" type="checkbox" id="CheckImage">
+                            <label class="form-check-label" for="CheckImage">Set Background Image (Sidebar)</label>
+                        </div>
+                        <div class="bg-images">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li class="sidebar-img-1 sidebar-img-active"><a class="rounded sidebar-img" id="img-1" href="#"><img src="../../../assets/images/sidebar-bg/sidebar-1.jpg" alt="" /></a></li>
+                                <li class="sidebar-img-2"><a class="rounded sidebar-img" id="img-2" href="#"><img src="../../../assets/images/sidebar-bg/sidebar-2.jpg" alt="" /></a></li>
+                                <li class="sidebar-img-3"><a class="rounded sidebar-img" id="img-3" href="#"><img src="../../../assets/images/sidebar-bg/sidebar-3.jpg" alt="" /></a></li>
+                                <li class="sidebar-img-4"><a class="rounded sidebar-img" id="img-4" href="#"><img src="../../../assets/images/sidebar-bg/sidebar-4.jpg" alt="" /></a></li>
+                                <li class="sidebar-img-5"><a class="rounded sidebar-img" id="img-5" href="#"><img src="../../../assets/images/sidebar-bg/sidebar-5.jpg" alt="" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Settings: Theme dynamics -->
+                    <div class="dt-setting">
+                        <small class="card-title text-muted">Dynamic Color Settings</small>
+                        <ul class="list-group list-unstyled mb-3 mt-1">
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                <label>Primary Color</label>
+                                <button id="primaryColorPicker" class="btn bg-primary avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                <label>Secondary Color</label>
+                                <button id="secondaryColorPicker" class="btn bg-secondary avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                <label class="text-muted small">Chart Color 1</label>
+                                <button id="chartColorPicker1" class="btn chart-color1 avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                <label class="text-muted small">Chart Color 2</label>
+                                <button id="chartColorPicker2" class="btn chart-color2 avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                <label class="text-muted small">Chart Color 3</label>
+                                <button id="chartColorPicker3" class="btn chart-color3 avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                <label class="text-muted small">Chart Color 4</label>
+                                <button id="chartColorPicker4" class="btn chart-color4 avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                <label class="text-muted small">Chart Color 5</label>
+                                <button id="chartColorPicker5" class="btn chart-color5 avatar xs border-0 rounded-0"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Settings: Light/dark -->
+                    <div class="setting-mode">
+                        <small class="card-title text-muted">Light/Dark & Contrast Layout</small>
+                        <ul class="list-group list-unstyled mb-0 mt-1">
+                            <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                <div class="form-check form-switch theme-switch mb-0">
+                                    <input class="form-check-input" type="checkbox" id="theme-switch">
+                                    <label class="form-check-label" for="theme-switch">Enable Dark Mode!</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                <div class="form-check form-switch theme-high-contrast mb-0">
+                                    <input class="form-check-input" type="checkbox" id="theme-high-contrast">
+                                    <label class="form-check-label" for="theme-high-contrast">Enable High Contrast</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                <div class="form-check form-switch theme-rtl mb-0">
+                                    <input class="form-check-input" type="checkbox" id="theme-rtl">
+                                    <label class="form-check-label" for="theme-rtl">Enable RTL Mode!</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start text-center">
+                    <button type="button" class="btn flex-fill btn-primary lift">Save Changes</button>
+                    <button type="button" class="btn flex-fill btn-white border lift" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Jquery Core Js -->
+<script src="../../../assets/bundles/libscripts.bundle.js"></script>
+
+<!-- Prism js file please do not add in your project -->
+<script src="../../../assets/plugin/prismjs/prism.js"></script>
+
+<!-- Jquery Page Js -->
+<script src="../../../assets/js/template.js"></script>
+</body>
+</html>
