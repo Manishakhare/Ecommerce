@@ -10,10 +10,10 @@ var auth = require('../controller/Auth_C');
 
 
 
-router.post('/Signup',auth.Signup);
-router.post('/signin',auth.signin);
 
-// router.post('/Search',auth.Search );
+
+router.post('/registerUser',auth.registerUser );
+router.post('/loginUser',auth.loginUser );
 // router.get('/show',auth.Show);
 
 

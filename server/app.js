@@ -4,16 +4,17 @@ const connectDB = require('./config/db');
 
 
 
-
+const dotenv = require('dotenv');
 const app = express();
-
+var path = require('path');
 var bodyParser = require('body-parser')
-
+dotenv.config({ path: './.env' });
 var cors = require('cors');
-
+const cookieParser = require("cookie-parser");
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
+app.use(cookieParser());
 app.use(bodyParser.urlencoded({
     extended: false
   }));
@@ -29,6 +30,7 @@ app.use(bodyParser.urlencoded({
 
 // Connect Database
 connectDB();
+
 
 app.get('/', (req, res) => res.send('Hello world!'));
 app.use('/admin', require('./router/authroutes'));
