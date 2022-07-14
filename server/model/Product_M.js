@@ -21,8 +21,7 @@ const productSchema = new mongoose.Schema(
       maxlength: 32,
     },
     category: {
-      type: ObjectId,
-      ref: 'Category',
+    type:String,
       required: true,
     },
     quantity: {
@@ -39,6 +38,11 @@ const productSchema = new mongoose.Schema(
     shipping: {
       required: false,
       type: Boolean,
+    },
+    user: {
+      type: mongoose.Schema.ObjectId,
+      ref: "User",
+      required: true,
     },
   },
   { timestamps: true }
