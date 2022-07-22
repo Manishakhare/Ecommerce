@@ -46,6 +46,7 @@ app.use('/admin', require('./router/authroutes'));
 app.use('/admin', require('./router/Categoryroutes'));
 
 app.use('/admin', require('./router/Productroutes'));
+app.use('/admin', require('./router/Orderroutes'));
 
 // Middleware for Errors
 app.use(errorMiddleware);
